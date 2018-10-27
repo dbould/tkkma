@@ -1,0 +1,44 @@
+{% include 'header.twig' %}
+            <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h1>Hi, Welcome to<br />
+                            TKKMA</h1>
+                            <p>{{mainText}}</p>
+                        </header>
+                        <h2>{{mainDesc|raw}}</h2>
+                    </div>
+                    <span class="image object">
+                        <img src="assets/img/tkkma-main.png" alt="" />
+                    </span>
+                </section>
+
+            <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Information</h2>
+                    </header>
+                    <div class="row">
+                        <div class="6u 12u$(small)">
+                            <h3>{{whatWeDoTitle}}</h3>
+                            <p>{{whatWeDoDesc|raw}}</p>
+                                <ul class="actions">
+                                    <li><a href="{{ path_for('about') }}" class="button">More</a></li>
+                                </ul>
+                        </div>
+                        <div class="6u$ 12u$(small)">
+                            <h3>{{whyTitle}}</h3>
+                            <p>{{whyDesc|raw}}...</p>
+                                <ul class="actions">
+                                    <li><a href="{{ path_for('about') }}" class="button">More</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </section>
+
+        </div>
+    </div>
+    {% include 'sidebar.twig' %}
+</div>
+{% include 'footer.twig' %}

@@ -1,0 +1,95 @@
+<!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+
+            <!-- Search
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+            -->
+
+            <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="{{ path_for('homepage') }}">Home</a></li>
+                        <li><a href="{{ path_for('about') }}">About</a></li>
+                        <li>
+                            <span class="opener">Taekwondo</span>
+                            <ul>
+                                <li><a href="{{ path_for('taekwondo') }}#about">About</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#White">White</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Yellow-Tag">Yellow-Tag</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Yellow">Yellow</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Green-Tag">Green-Tag</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Green">Green</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Blue-Tag">Blue-Tag</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Blue">Blue</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Red-Tag">Red-Tag</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Red">Red</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Black-Tag">Black-Tag</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Cho-Dan-Bo">Cho-Dan-Bo</a></li>
+                                <li><a href="{{ path_for('taekwondo') }}#Black">Black</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Kickboxing</span>
+                            <ul>
+                                <li><a href="{{ path_for('kickboxing') }}#About">About</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#White">White</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Yellow-Tag">Yellow-Tag</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Yellow">Yellow</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Orange">Orange</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Green">Green</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Purple">Purple</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Blue">Blue</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Red">Red</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Brown">Brown</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Brown-White">Brown-White</a></li>
+                                <li><a href="{{ path_for('kickboxing') }}#Cho-Dan-Bo">Cho-Dan-Bo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path_for('associations') }}">Associations</a></li>
+                        <li><a href="{{ path_for('photos') }}">Photos</a></li>
+                    </ul>
+                </nav>
+
+                <section>
+                    <header class="major">
+                        <h2>Training</h2>
+                    </header>
+                    <h3>Kickboxing</h3>
+                    <p>
+                        <b>Training Times</b><br />
+                        Every Monday<br />
+                        7:30 - 8:30
+                    </p>
+                </section>
+
+            <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+
+                    <ul class="contact">
+                        <li class="fa-envelope-o"><a href="mailto:tkkma99@gmail.com">tkkma99@gmail.com</a></li>
+                        <li class="fa-phone"><a href="twl:+447891090964">07891090964</a></li>
+                        <li class="fa-home">North Common Village Hall<br />
+                        North Common<br />
+                        Bristol, BS30 8XX</li>
+                        <iframe width="280" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps/ms?msa=0&amp;msid=203818558970437485836.0004d3974aa0bf5fa99c3&amp;gl=uk&amp;ie=UTF8&amp;t=m&amp;ll=51.448765,-2.468834&amp;spn=0.009361,0.018239&amp;z=15&amp;output=embed"></iframe>
+                    </ul>
+                </section>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <p>&copy; TKKMA {{ "now"|date("Y") }}. All rights reserved.</p>
+                </footer>
+
+        </div>
+    </div>

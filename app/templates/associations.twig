@@ -1,0 +1,35 @@
+{% include 'header.twig' %}
+                <!-- Content -->
+                <section>
+                	<header class="main">
+                		<h1>Associations</h1>
+                	</header>
+
+                    <div class="row">
+                	<!-- Content -->
+                    {% for key, association in associations %}
+                        <div class="6u 12u$(small)">
+                        <br />
+                            <h3 id='{{key}}'>{{key}}</h3>
+                            {% for key, details in association %}
+                                <p>{{details|raw}}</p>
+                            {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="row">
+                	<!-- Content -->
+                    {% for key, associationlogo in associationlogos %}
+                        <div class="4u 12u$(medium)"">
+                        <br />
+                            <p>{{associationlogo|raw}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+			</div>
+		</div>
+	{% include 'sidebar.twig' %}
+</div>
+{% include 'footer.twig' %}

@@ -1,0 +1,33 @@
+{% include 'header.twig' %}
+                <!-- Content -->
+                <section>
+                	<header class="main">
+                		<h1>Kickboxing</h1>
+                	</header>
+
+                    <div class="row">
+                        {% for key, info in information %}
+                            <div class="6u 12u$(small)">
+                            <h3>{{key}}</h3>
+                            <p>{{info|raw}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="row">
+                	<!-- Content -->
+                    {% for key, kickboxing in kickboxingDetails %}
+                        <div class="6u 12u$(small)">
+                            <h3 id='{{key}}'>{{key}}</h3>
+                            {% for key, details in kickboxing %}
+                                <p>{{details|raw}}</p>
+                            {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+			</div>
+		</div>
+	{% include 'sidebar.twig' %}
+</div>
+{% include 'footer.twig' %}

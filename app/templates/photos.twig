@@ -1,0 +1,29 @@
+{% include 'header.twig' %}
+<link rel="stylesheet" href="assets/css/lightbox.min.css">
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Photos</h1>
+									</header>
+
+                                    <div class="box alt">
+                                        <div class="row 50% uniform">
+                                        {% for key, photo in photos %}
+                                            <div class="4u">
+                                                <a class="image fit" href="{{photo}}" data-lightbox="photos"><img src="{{photo}}" alt="" /></a>
+                                            </div>
+                                        {% endfor %}
+                                        </div>
+                                    </div>
+
+
+
+								</section>
+
+						</div>
+					</div>
+				{% include 'sidebar.twig' %}
+			</div>
+            <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+            {% include 'footer.twig' %}

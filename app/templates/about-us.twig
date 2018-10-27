@@ -1,0 +1,30 @@
+{% include 'header.twig' %}
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>About</h1>
+									</header>
+
+									<!-- Content -->
+									<div class="row">
+										<div class="6u 12u$(small)">
+											<h3>{{instructorText}}</h3>
+                                            <img height="320" width="250" src="assets/img/IMGP00152.jpg" />
+											<p>{{instructorDesc|raw}}</p>
+                                        </div>
+										<div class="6u$ 12u$(small)">
+											<h3>{{whyTitle}}</h3>
+											<p>{{whyDesc|raw}}</p>
+
+                                            <h3>{{whatWeDoTitle}}</h3>
+                                            <p>{{whatWeDoDesc|raw}}</p>
+                                        </div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+				{% include 'sidebar.twig' %}
+			</div>
+            {% include 'footer.twig' %}
