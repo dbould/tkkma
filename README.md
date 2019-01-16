@@ -2,7 +2,7 @@
 
 Taekwondo Kickboxing Korean Martial Arts
 
-This is a slime 3 project that includes Twig, Flash messages and Monolog.
+This is a slim 3 project that includes Twig, Flash messages and Monolog.
 
 ### Run it:
 
