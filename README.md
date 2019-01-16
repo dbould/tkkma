@@ -1,10 +1,8 @@
-# Slim 3 Skeleton
+# TKKMA
 
-This is a simple skeleton project for Slim 3 that includes Twig, Flash messages and Monolog.
+Taekwondo Kickboxing Korean Martial Arts
 
-## Create your project:
-
-    $ composer create-project --no-interaction --stability=dev akrabat/slim3-skeleton my-app
+This is a slime 3 project that includes Twig, Flash messages and Monolog.
 
 ### Run it:
 
