@@ -1,0 +1,25 @@
+{% include 'header.twig' %}
+        <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Blog</h2>
+                </header>
+                <div class="row">
+                {% for key, post in posts %}
+                    <div class="11u 12u$(small)" style="border-bottom: solid 1px rgba(210,215,217,0.75)">
+                        <h3>{{post.title|raw}}</h3>
+                        <p>{{post.content|raw}}</p>
+                        <a href="{{ path_for('post', {id: post.id}) }}" class="button">More</a>
+                        <br /><br />
+                    </div>
+                    <div class="11u 12u$(small)">
+                        <br />
+                    </div>
+                {% endfor %}
+                </div>
+            </section>
+        </div>
+    </div>
+    {% include 'sidebar.twig' %}
+</div>
+{% include 'footer.twig' %}

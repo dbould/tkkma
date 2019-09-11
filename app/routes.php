@@ -20,3 +20,9 @@ $app->get('/photos', App\Action\PhotoAction::class . ':getData')
 
 $app->get('/sitemap', App\Action\SiteMapAction::class . ':get')
 ->setName('sitemap');
+
+$app->get('/blog', App\Action\PostsAction::class)
+->setName('blog');
+
+$app->get('/post{id}', App\Action\PostAction::class)
+->setName('post');

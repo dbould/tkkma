@@ -70,3 +70,11 @@ $container[App\Action\PhotoAction::class] = function ($c) {
 $container[App\Action\SiteMapAction::class] = function ($c) {
     return new App\Action\SiteMapAction($c->get('view'), $c->get('logger'), $c->get('router')->getRoutes());
 };
+
+$container[App\Action\PostsAction::class] = function ($c) {
+    return new App\Action\PostsAction($c->get('view'), $c->get('logger'), $c->get('router')->getRoutes());
+};
+
+$container[App\Action\PostAction::class] = function ($c) {
+    return new App\Action\PostAction($c->get('view'), $c->get('logger'), $c->get('router')->getRoutes());
+};

@@ -1,0 +1,16 @@
+{% include 'header.twig' %}
+				<!-- Content -->
+				<section>
+                    <div class="content">
+                        <header>
+                            <h2>{{title}}</h2>
+                        </header>
+                        <p>{{content|nl2br}}</p>
+                        <a href="{{ path_for('blog') }}" class="button">Back</a>
+                    </div>
+				</section>
+			</div>
+		</div>
+	{% include 'sidebar.twig' %}
+</div>
+{% include 'footer.twig' %}
